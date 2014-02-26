@@ -34,6 +34,9 @@
 #       with the -c option.
 CONFIG="duplicity-backup.conf"
 
+#set ulimit otherwise duplicity gives an error
+ulimit -n 1024
+
 ##############################################################
 # Script Happens Below This Line - Shouldn't Require Editing #
 ##############################################################
